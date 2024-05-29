@@ -1,5 +1,5 @@
-import { Container, Text, VStack, Heading, Box, Button, HStack, IconButton } from "@chakra-ui/react";
-import { FaBriefcase, FaPlus } from "react-icons/fa";
+import { Container, Text, VStack, Heading, HStack, Button } from "@chakra-ui/react";
+import { FaBriefcase, FaPlus, FaPaperPlane } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Index = () => {
@@ -14,6 +14,9 @@ const Index = () => {
           </Button>
           <Button as={Link} to="/post-job" leftIcon={<FaPlus />} colorScheme="teal" variant="outline" size="lg">
             Post a Job
+          </Button>
+          <Button as={Link} to="/apply-job" leftIcon={<FaPaperPlane />} colorScheme="teal" variant="outline" size="lg">
+            Apply for a Job
           </Button>
         </HStack>
       </VStack>
